@@ -162,9 +162,12 @@ namespace DataStructuresAssignment
 
                                             //pop off item user requested to be deleted
                                             myStack.Pop();
+                                            
+                                            //set tempStack count to variable for the forloop
+                                            int iTempStackCount = tempStack.Count();
 
                                             //add back items in tempStack to myStack
-                                            for (int iCount = 0; iCount < tempStack.Count(); iCount++)
+                                            for (int iCount = 0; iCount < iTempStackCount; iCount++)
                                             {
                                                 myStack.Push(tempStack.Pop());
                                             }
